@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt("Nhập vào a: "));
+    var b = parseInt(prompt("Nhập vào b: "));
+    var c = parseInt(prompt("Nhập vào c: "));
+     detal = b*b -4*a*c;
+    if(a==0){
+        document.write("Phương trình vô nghiệm");
+    }
+     if(detal == 0){
+         x1 = -b/2*a;
+         x2= -b/2*a;
+         alert("Phương có nghiệm là: " + x1 +  "<br/>" + x2 );
+        }
+        else if(detal >0) {
+         x1 =( -b+Math.sqrt(detal))/(a*2);
+         x2 = (-b-Math.sqrt(detal))/(a*2);
+         alert("phương trình có 2 nghiệm là: " + x1 +  "<br/>" + x2 );
+
+     }
+
+    else if(detal<0){
+    document.write("Phương trình vô nghiệm")
+    }
+
+
+
+</script>
+</body>
+</html>
+
+
